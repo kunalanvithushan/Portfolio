@@ -1,0 +1,30 @@
+.not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .not-found h1 {
+    font-size:100px;
+    margin-bottom: 1rem;
+    color: #f70808;
+    align-items: center;
+  }
+  
+  .home-link {
+    margin-top: 1rem;
+    background: #5b21b6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+  }
+  
+  .home-link:hover {
+    background: #efeef1;
+  }
+  
