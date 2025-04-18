@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React,{useState} from 'react';
 import GIT from "../images/github_git_icon_145985 (1).png"
 import netbeans from "../images/netbeans_94416.png"
 import postman from "../images/postman_macos_bigsur_icon_189815.png"
@@ -14,9 +14,11 @@ import herobg from "../images/hero-bg.png"
 import MY  from "../images/Programming-pana.png"
 import Profile from "../images/My.jpg"
 import Resume from "../assets/Kunalan Vithushan Resume.pdf"
- 
+import { projects } from "../data/projects";
 const Home = () => {
-  
+  const [viewAll, setViewAll] = useState(false);
+
+  const visibleProjects = viewAll ? projects : projects.slice(0, 2);
   return (
     <>
    
@@ -167,56 +169,46 @@ const Home = () => {
      </div>
    </section>
 
+ 
+   <section id="projects" className="about_section layout_padding">
+      <div className="container">
+        <div className="heading_container heading_center">
+          <h2>
+            My <span>Project</span>
+          </h2>
+        </div>
+        <div className="row">
+          {visibleProjects.map((project, index) => (
+            <div className="col-md-12" key={index}>
+              <div className="project-box">
+                <h4>{project.title}</h4>
+                <p>{project.description}</p>
+                <p>
+                  <strong>Tech:</strong> {project.tech}
+                </p>
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+
+     
 
 
-
-
-
-
-   <section id='projects' class="about_section layout_padding">
-     <div class="container  ">
-       <div class="heading_container heading_center">
-         <h2>
-           My <span>Project</span>
-         </h2>
-
-       </div>
-       <div class="row">
-         <div class="col-md-12 ">
-           <div class="project-box">
-             <h4>Service provider APP</h4>
-             <p>A full-featured CRUD application that helps small businesses manage inventory, categories, and user authentication.</p>
-             <p><strong>Tech:</strong> Node.js, Express, MongoDB, React</p>
-             <a href="https://github.com/yourusername/stock-management" target="_blank" class="btn btn-primary">View on GitHub</a>
-           </div>
-         </div>
-         <div class="col-md-12 ">
-           <div class="project-box">
-             <h4>Portfolio Website</h4>
-             <p>A responsive personal portfolio website built using React and Vite, showcasing projects, skills, and contact form.</p>
-             <p><strong>Tech:</strong> React, Vite, Tailwind CSS</p>
-             <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn btn-primary">View on GitHub</a>
-           </div>
-         </div>
-       </div>
-
-
-       <div class="col-md-12 ">
-         <div class="project-box">
-           <h4>Portfolio Website</h4>
-           <p>A responsive personal portfolio website built using React and Vite, showcasing projects, skills, and contact form.</p>
-           <p><strong>Tech:</strong> React, Vite, Tailwind CSS</p>
-           <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn btn-primary">View on GitHub</a>
-         </div>
-       </div>
-       <div class="btn-box mt-4 text-center">
-         <a>
-           View all.
-         </a>
-       </div>
-     </div>
-   </section>
-
+<div className="btn-box mt-4 text-center">
+          <button onClick={() => setViewAll(!viewAll)} className="btn btn-secondary">
+            {viewAll ? "Show less" : "View all"}
+          </button>
+        </div>
+      </div>
+    </section>
 
 
    <section id='about' class="why_section layout_padding">
@@ -316,65 +308,31 @@ const Home = () => {
              </div>
            </div>
            <div class="info_social">
-             <a href="">
+             <a href="https://www.facebook.com/share/15GNXGofG1/">
                <i class="fa fa-facebook" aria-hidden="true"></i>
              </a>
-             <a href="">
-               <i class="fa fa-twitter" aria-hidden="true"></i>
+             <a href="https://github.com/kunalanvithushan">
+               <i class="fa fa-github" aria-hidden="true"></i>
              </a>
-             <a href="">
+             <a href="http://www.linkedin.com/in/kunalan-vithushan">
                <i class="fa fa-linkedin" aria-hidden="true"></i>
              </a>
-             <a href="">
+             <a href="https://www.instagram.com/kunanlan_vithusan?igsh=MTA2cmthY3RtcXdmYw==">
                <i class="fa fa-instagram" aria-hidden="true"></i>
              </a>
            </div>
          </div>
          <div class="col-md-6 col-lg-3 info_col">
-           <div class="info_detail">
-             <h4>
-               Info
-             </h4>
-             <p>
-               necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful
-             </p>
-           </div>
-         </div>
-         <div class="col-md-6 col-lg-2 mx-auto info_col">
-           <div class="info_link_box">
-             <h4>
-               Links
-             </h4>
-             <div class="info_links">
-               <a class="active" href="index.html">
-                 Home
-               </a>
-               <a class="" href="about.html">
-                 Skills
-               </a>
-               <a class="" href="service.html">
-                 Project
-               </a>
-               <a class="" href="why.html">
-                 about
-               </a>
-               <a class="" href="team.html">
-                 Contact
-               </a>
-             </div>
-           </div>
-         </div>
-         <div class="col-md-6 col-lg-3 info_col ">
-           <h4>
-             Subscribe
-           </h4>
-           <form action="#">
-             <input type="text" placeholder="Enter email" />
-             <button type="submit">
-               Subscribe
-             </button>
-           </form>
-         </div>
+   <div class="info_detail">
+     <h4> info</h4>
+     <p>
+        portfolio! Here, you can find all the latest updates and projects I’ve worked on, directly sent to your inbox. 
+       Whether it's about web development, design, or tech tips, I send out regular newsletters to keep you in the loop.
+     </p>
+   </div>
+</div>
+ 
+       
        </div>
      </div>
    </section>
