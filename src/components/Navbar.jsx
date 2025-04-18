@@ -24,7 +24,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
                   <a class="navbar-brand">
                     <span>
-                      Portfolio
+                      PortfolioK
                     </span>
                   </a>
        
