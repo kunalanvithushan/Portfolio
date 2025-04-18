@@ -40,7 +40,7 @@ const Home = () => {
                <div class="col-md-6 ">
                  <div class="detail-box">
                    <p>
-                     Hi, i am
+                    Hello, i am
                    </p> <h1>
                      KUNALAN <br />
                      VITHUSHAN
