@@ -18,21 +18,26 @@ import { Link, animateScroll as scroll } from 'react-scroll';
         }, []);
       return (
         <>
-          <header className={`header_section fixed-top header-dark ${scrollY > 100 ? 'header-scrolled' : ''}`}>
+          <header className={`fixed-top header-dark ${scrollY > 100 ? 'header-scrolled' : ''}`}>
+  <div className="container-fluid">
+    <nav className="navbar navbar-expand-lg custom_nav-container">
+      <a className="navbar-brand">
+        <span>PortfolioK</span>
+      </a>
 
-              <div class="container-fluid">
-                <nav class="navbar navbar-expand-lg custom_nav-container ">
-                  <a class="navbar-brand"  >
-                    <span>
-                      Portfolio
-                    </span>
-                  </a>
-       
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class=""> </span>
-                  </button>
-       
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav  ">
                       <li class="nav-item active">
                       <Link
