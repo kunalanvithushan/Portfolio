@@ -1,4 +1,4 @@
- 
+
 import React from 'react';
 import GIT from "../images/github_git_icon_145985 (1).png"
 import netbeans from "../images/netbeans_94416.png"
@@ -13,6 +13,7 @@ import Java from "../images/java_original_wordmark_logo_icon_146459.png"
 import herobg from "../images/hero-bg.png"
 import MY  from "../images/Programming-pana.png"
 import Profile from "../images/My.jpg"
+import Resume from "../assets/Kunalan Vithushan Resume.pdf"
  
 const Home = () => {
   
@@ -51,6 +52,23 @@ const Home = () => {
                    </p>
 
                  </div>
+                    <a
+                     href={Resume}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn btn-primary"
+                    >
+                      View Resume
+                    </a>
+
+                    <a
+                      href={Resume}
+                      download
+                      className="btn btn-outline-secondary"
+                    >
+                      Download Resume
+                    </a>
+
                </div>
                <div class="col-md-6">
                  <div class="img-box">
@@ -166,7 +184,7 @@ const Home = () => {
        <div class="row">
          <div class="col-md-12 ">
            <div class="project-box">
-             <h4>Stock Management System</h4>
+             <h4>Service provider APP</h4>
              <p>A full-featured CRUD application that helps small businesses manage inventory, categories, and user authentication.</p>
              <p><strong>Tech:</strong> Node.js, Express, MongoDB, React</p>
              <a href="https://github.com/yourusername/stock-management" target="_blank" class="btn btn-primary">View on GitHub</a>
@@ -191,7 +209,11 @@ const Home = () => {
            <a href="https://github.com/yourusername/portfolio" target="_blank" class="btn btn-primary">View on GitHub</a>
          </div>
        </div>
-
+       <div class="btn-box mt-4 text-center">
+         <a>
+           View all.
+         </a>
+       </div>
      </div>
    </section>
 
@@ -252,11 +274,7 @@ const Home = () => {
          </div>
        </div>
 
-       <div class="btn-box mt-4 text-center">
-         <a href="#projects">
-           View My Projects
-         </a>
-       </div>
+       
      </div>
    </section>
 

@@ -22,7 +22,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
   <div className="container-fluid">
     <nav className="navbar navbar-expand-lg custom_nav-container">
       <a className="navbar-brand">
-        <span>PortfolioK</span>
+        <span>Portfolio</span>
       </a>
 
       <button
@@ -43,7 +43,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
                       <Link
          to="home"
          smooth={true}
-         duration={2000}
+         duration={400}
          offset={-80}
          class="nav-link"
          style={{ cursor: 'pointer' }}
@@ -53,7 +53,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
                       <Link
          to="skills"
          smooth={true}
-         duration={2000}
+         duration={400}
          offset={-80}
          class="nav-link"
          style={{ cursor: 'pointer' }}
@@ -64,7 +64,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
                       <Link
          to="projects"
          smooth={true}
-         duration={2000}
+         duration={400}
          offset={-80}
          class="nav-link"
          style={{ cursor: 'pointer' }}
@@ -73,7 +73,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
           <li class="nav-item">     <Link
          to="about"
          smooth={true}
-         duration={2000}
+         duration={400}
          offset={-80}
          class="nav-link"
          style={{ cursor: 'pointer' }}
@@ -85,7 +85,7 @@ import { Link, animateScroll as scroll } from 'react-scroll';
                       <Link
          to="Contact"
          smooth={true}
-         duration={2000}
+         duration={400}
          offset={-80}
          class="nav-link"
          style={{ cursor: 'pointer' }}
