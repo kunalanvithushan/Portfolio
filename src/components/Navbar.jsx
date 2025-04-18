@@ -18,11 +18,11 @@ import { Link, animateScroll as scroll } from 'react-scroll';
         }, []);
       return (
         <>
-          <header className={`header_section fixed-top header-dark ${scrollY > 100 ? 'header-scrolled' : ''}`}>
+          <header class="header_section" className={` fixed-top header-dark ${scrollY > 100 ? 'header-scrolled' : ''}`}>
 
               <div class="container-fluid">
                 <nav class="navbar navbar-expand-lg custom_nav-container ">
-                  <a class="navbar-brand" href="index.html">
+                  <a class="navbar-brand">
                     <span>
                       Portfolio
                     </span>
