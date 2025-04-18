@@ -17,6 +17,7 @@
 
   .slider_section {
     padding: 45px 0 75px 0;
+    padding-top: 100px;
   }
 
   .custom_nav-container .navbar-nav {
@@ -105,5 +106,6 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1170px;
+    padding-top:20px ;
   }
 }
