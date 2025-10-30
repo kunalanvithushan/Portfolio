@@ -141,6 +141,7 @@ a:focus {
 .header_section .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-brand span {
@@ -159,7 +160,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -168,7 +169,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #00bbf0;
+  color: #ffffff;
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link {
@@ -220,11 +221,14 @@ a:focus {
   width: 100%;
   background-color: #ffffff;
   top: -10px;
-  border-radius: 5px;
+  border-radius: 0px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-
+.BV{
+  background-color: #000000;
+  padding-right: 5px;
+}
 .custom_nav-container .navbar-toggler span::after {
   top: 10px;
 }
@@ -1062,8 +1066,8 @@ ul li {
 }
 
 .header-scrolled {
-  background-color:#00204a ;  
-  box-shadow: 0 4px 6px rgba#000000(0, 0, 0, 0.1);
+  background-color:rgb(138 191 241) ;  
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
